@@ -10,17 +10,50 @@
     <div class="weather-app">
       <header>
         <form class="search-form">
-          <input class="search-input" type="search" required />
+          <input
+            class="search-input"
+            type="search"
+            placeholder="Enter a city..."
+            required
+          />
           <input class="search-button" type="submit" value="Search" />
         </form>
       </header>
       <main>
-        <h1>New York</h1>
-        <p>
+        <h1 class="current-city">New York</h1>
+        <p class="current-details">
           Tuesday 15:53, overcast clouds<br />
           Humidity: 68%, Wind: 4.12km/h
         </p>
-        <div>☀️ 81 °F</div>
+        <div class="current-temperature">☀️ 81 °F</div>
+
+        <ul>
+          <li>
+            Mon<br />
+            🌤️<br />
+            <strong> 82°</strong> 65°
+          </li>
+          <li>
+            Tue<br />
+            ☁️<br />
+            <strong> 82°</strong> 69°
+          </li>
+          <li>
+            Wed<br />
+            ☀️<br />
+            <strong>85°</strong> 74°
+          </li>
+          <li>
+            Thu<br />
+            ☀️<br />
+            <strong>86°</strong> 76°
+          </li>
+          <li>
+            Fri<br />
+            🌥️<br />
+            <strong> 88°</strong> 74°
+          </li>
+        </ul>
       </main>
       <footer>
         Project was coded by
