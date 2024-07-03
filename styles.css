@@ -12,7 +12,7 @@ body {
   margin: 60px auto;
   max-width: 500px;
   height: 550px;
-  padding: 25px;
+  padding: 35px;
   box-shadow: 0 15px 25px #fbd0f5;
   border: 4px solid #fff;
 }
@@ -35,6 +35,8 @@ body {
 }
 h1 {
   font-size: 60px;
+  text-align: center;
+  line-height: 2;
 }
 .current-details {
   display: flex;
@@ -44,40 +46,43 @@ h1 {
 }
 .date {
   position: relative;
-  top: -10px;
-  left: 290px;
+  top: -24px;
+  left: 310px;
 }
 .condition {
   position: relative;
-  top: 5px;
-  left: 190px;
+  top: 55px;
+  left: 200px;
 }
 .humidity {
   position: relative;
-  bottom: -10px;
-  left: 80px;
+  bottom: -30px;
+  left: 87px;
 }
 .wind-speed {
   position: relative;
-  top: 32px;
-  left: -30px;
+  top: 4px;
+  left: -26px;
 }
 .current-temperature {
-  font-size: 60px;
+  font-size: 80px;
   display: flex;
 }
 .temp-icon {
   position: relative;
-  bottom: 40px;
+  bottom: 60px;
+  left: 40px;
 }
 .temp-value {
   position: relative;
-  bottom: 40px;
+  bottom: 60px;
+  left: 40px;
 }
 .temp-unit {
   font-size: 27px;
   position: relative;
-  bottom: 36px;
+  bottom: 56px;
+  left: 40px;
 }
 ul {
   list-style-type: none;
