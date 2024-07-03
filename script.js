@@ -1,10 +1,51 @@
 function updateWeather(response) {
   let temperatureElement = document.querySelector("#temperature-value");
   let temperature = response.data.temperature.current;
-  let cityElement = document.querySelector("#current-city");
-
-  cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = Math.round(temperature);
+
+  let cityElement = document.querySelector("#current-city");
+  cityElement.innerHTML = `${response.data.city}`;
+
+  let windSpeedElement = document.querySelector("#wind-speed");
+  windSpeedElement.innerHTML = `Wind: ${response.data.wind.speed}km/h`;
+
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = `Humidity: ${response.data.temperature.humidity}%`;
+
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = `${response.data.condition.description}`;
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.innerHTML = `<img src"${response.data.condition.icon_url}"class="temp-icon"/>`;
+
+  let date = new Date(response.data.time * 1000);
+  let timeElement = document.querySelector("#time");
+  timeElement.innerHTML = formatDate(date);
+}
+function formatDate(date) {
+  let hour = date.getHours();
+  let minutes = date.getMinutes();
+
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  let formattedDay = days[day];
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+
+  return `${formattedDay} ${hour}:${minutes}`;
 }
 
 function searchCity(city) {
