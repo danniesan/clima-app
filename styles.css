@@ -34,15 +34,60 @@ body {
   font-size: 15px;
 }
 h1 {
-  font-size: 40px;
+  font-size: 60px;
+}
+.current-details {
+  display: flex;
+  justify-content: right;
+  font-size: 18px;
+  line-height: 1;
+}
+.date {
+  position: relative;
+  top: -10px;
+  left: 290px;
+}
+.condition {
+  position: relative;
+  top: 5px;
+  left: 190px;
+}
+.humidity {
+  position: relative;
+  bottom: -10px;
+  left: 80px;
+}
+.wind-speed {
+  position: relative;
+  top: 32px;
+  left: -30px;
+}
+.current-temperature {
+  font-size: 60px;
+  display: flex;
+}
+.temp-icon {
+  position: relative;
+  bottom: 40px;
+}
+.temp-value {
+  position: relative;
+  bottom: 40px;
+}
+.temp-unit {
+  font-size: 27px;
+  position: relative;
+  bottom: 36px;
 }
 ul {
   list-style-type: none;
+  font-size: 20px;
+  line-height: 1.5;
 }
 li {
   text-align: center;
   display: inline-block;
-  padding: 15px;
+  padding: 10px;
 }
 footer {
   border-top: 1px solid #8ec5fc;
