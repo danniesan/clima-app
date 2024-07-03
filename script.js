@@ -7,3 +7,7 @@ function searchSubmit(event) {
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", searchSubmit);
+
+let apiKey = "bfb46b3ac41f3bd0tof60adf87306491";
+let apiUrl =
+  "https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial";
