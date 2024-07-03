@@ -16,7 +16,7 @@ function updateWeather(response) {
   descriptionElement.innerHTML = `${response.data.condition.description}`;
 
   let iconElement = document.querySelector("#icon");
-  iconElement.innerHTML = `<img src"${response.data.condition.icon_url}"class="temp-icon"/>`;
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}"class="temp-icon"/>`;
 
   let date = new Date(response.data.time * 1000);
   let timeElement = document.querySelector("#time");
