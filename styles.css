@@ -56,17 +56,17 @@ h1 {
 .description {
   position: relative;
   top: 55px;
-  left: 220px;
+  left: 225px;
 }
 .humidity {
   position: relative;
   bottom: -30px;
-  left: 120px;
+  left: 135px;
 }
 .wind-speed {
   position: relative;
   top: 4px;
-  left: -10px;
+  left: 20px;
 }
 .current-temperature {
   font-size: 80px;
@@ -74,19 +74,19 @@ h1 {
 }
 .temp-icon {
   position: relative;
-  bottom: 60px;
-  left: 40px;
+  bottom: 30px;
+  left: 10px;
 }
 .temp-value {
   position: relative;
-  bottom: 60px;
-  left: 40px;
+  bottom: 50px;
+  left: 20px;
 }
 .temp-unit {
   font-size: 27px;
   position: relative;
-  bottom: 56px;
-  left: 40px;
+  bottom: 54px;
+  left: 30px;
 }
 ul {
   list-style-type: none;
