@@ -11,12 +11,10 @@ body {
   border-radius: 20px;
   margin: 60px auto;
   max-width: 500px;
-  height: 550px;
+  height: 580px;
   padding: 35px;
   box-shadow: 0 15px 25px #fbd0f5;
   border: 4px solid #fff;
-}
-.search-form {
 }
 .search-input {
   background: rgb(242, 242, 242, 0.5);
@@ -33,36 +31,42 @@ body {
   padding: 20px;
   font-size: 15px;
 }
+main {
+  padding-bottom: 20px;
+}
 h1 {
   font-size: 60px;
   text-align: center;
-  line-height: 2;
+  line-height: 1.5;
 }
 .current-details {
   display: flex;
-  justify-content: right;
   font-size: 18px;
   line-height: 1;
+}
+.current-detail-value {
+  color: #6a2286;
+  font-weight: bolder;
 }
 .date {
   position: relative;
   top: -24px;
-  left: 310px;
+  left: 330px;
 }
 .condition {
   position: relative;
   top: 55px;
-  left: 200px;
+  left: 220px;
 }
 .humidity {
   position: relative;
   bottom: -30px;
-  left: 87px;
+  left: 108px;
 }
 .wind-speed {
   position: relative;
   top: 4px;
-  left: -26px;
+  left: -10px;
 }
 .current-temperature {
   font-size: 80px;
@@ -86,7 +90,7 @@ h1 {
 }
 ul {
   list-style-type: none;
-  font-size: 20px;
+  font-size: 21px;
   line-height: 1.5;
 }
 li {
@@ -96,7 +100,8 @@ li {
 }
 footer {
   border-top: 1px solid #8ec5fc;
-  padding: 14px 0 0 0;
-  font-size: 13px;
+  font-family: monospace;
+  padding-top: 8px;
+  font-size: 12px;
   text-align: center;
 }
